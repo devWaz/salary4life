@@ -4,8 +4,9 @@ import logo from "../assests/whiteLogo.svg";
 
 const Navbar = () => {
     return ( 
-        <>
-            <div className="flex items-center py-3 px-5 justify-between">
+        // sticky top-0
+        <div className=" z-10">
+            <div className="flex items-center py-3 px-5 justify-between bg-[#FFFFFF]">
                 <div className="flex items-center gap-1">
                     <p className="text-[#28743A]">Menu</p>
                     <img src={menuIcon} alt="Menu Icon" className="w-5"/>
@@ -23,7 +24,7 @@ const Navbar = () => {
                     <a href="" className="bg-[#BBFF4B] text-[#28743A] p-1 rounded-full px-3">Join Now</a>
                 </div>
             </header>
-        </>
+        </div>
      );
 }
  
