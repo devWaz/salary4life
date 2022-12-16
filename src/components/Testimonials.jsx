@@ -3,18 +3,22 @@ import { Link } from "react-router-dom";
 import avatar from "../assests/avatar.jpg";
 import Carousel from "nuka-carousel"
 
-const Testimonial = ({testimony, name, location}) => {
-    <div className="red p-5">
-        <p>{testimony}</p>
-        <div className="">
-            {/* <img src="" alt="" /> */}
-            <div className="">
-                <h2>{name}</h2>
-                <p>{location}</p>
-            </div>
-        </div>
-    </div>
-}
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
+
+// const Testimonial = ({testimony, name, location}) => {
+//     <div className="red p-5">
+//         <p className="">{testimony}</p>
+//         <div className="">
+//             {/* <img src="" alt="" /> */}
+//             <div className="">
+//                 <h2 className="">{name}</h2>
+//                 <p className="">{location}</p>
+//             </div>
+//         </div>
+//     </div>
+// }
 
 const Testimonials = () => {
     return ( 
@@ -24,38 +28,39 @@ const Testimonials = () => {
             <a href="" className="text-[#28743A] flex gap-1">View all Testimonials here
                 <img src={ArrowUpRight} alt="" />
             </a>
-            <Carousel className=" p-1 mt-5 flex gap-3">
-                <div className="p-5 bg-white rounded-lg w-[80vw] mr-5">
-                    <p className="mt-5 text-[#797979]">"Winning salary for life gave me opportunity to get enough money to run my business"</p>
-                    <div className="mt-16 flex gap-3">
-                        <img src={avatar} className="h-[2.5rem]" alt="" />
-                        <div className="text-[#797979]">
-                            <h2 className="text-[.8rem]">Funmi Kariola</h2>
-                            <p className="text-[.7rem]">Ogun state</p>
+
+                <Swiper 
+                spaceBetween={0}
+                onSlideChange={() => console.log('slide change')}
+                className="p-1 mt-5 flex gap-3">
+                    {/* slide */}
+                    <SwiperSlide className="">
+                    <div className="p-5 bg-white rounded-lg w-[100%]">
+                        <p className="mt-5 text-[#797979]">"Winning salary for life gave me opportunity to get enough money to run my business"</p>
+                        <div className="mt-16 flex gap-3">
+                            <img src={avatar} className="h-[2.5rem]" alt="" />
+                            <div className="text-[#797979]">
+                                <h2 className="text-[.8rem]">Funmi Kariola</h2>
+                                <p className="text-[.7rem]">Ogun state</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                {/* <div className="p-5 bg-white rounded-lg w-[80vw] mr-5">
-                    <p>"Winning salary for life gave me opportunity to get enough money to run my business"</p>
-                    <div className="">
-                        <img src="" alt="" />
-                        <div className="">
-                            <h2>Funmi Kariola</h2>
-                            <p>Ogun state</p>
+                    </SwiperSlide>
+                    {/* slide */}
+                    <SwiperSlide>
+                    <div className="p-5 bg-white rounded-lg w-[100%] mr-5">
+                        <p className="mt-5 text-[#797979]">"Winning salary for life gave me opportunity to get enough money to run my business"</p>
+                        <div className="mt-16 flex gap-3">
+                            <img src={avatar} className="h-[2.5rem]" alt="" />
+                            <div className="text-[#797979]">
+                                <h2 className="text-[.8rem]">Funmi Kariola</h2>
+                                <p className="text-[.7rem]">Ogun state</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="p-5 bg-white rounded-lg w-[80vw]">
-                    <p>"Winning salary for life gave me opportunity to get enough money to run my business"</p>
-                    <div className="">
-                        <img src="" alt="" />
-                        <div className="">
-                            <h2>Funmi Kariola</h2>
-                            <p>Ogun state</p>
-                        </div>
-                    </div>
-                </div> */}
-            </Carousel>
+                    </SwiperSlide>
+                </Swiper>
+
         </div>
      );
 }

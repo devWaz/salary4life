@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import FAQs from "./FAQs";
 import Testimonials from "./Testimonials";
 import Marqueee from "./Marquee";
+import Games from "./Games";
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             <Navbar/>
             <Marqueee/>
             <HeroSection/>
+            <Games/>
             <Testimonials/>
             <FAQs/>
             <Footer/>
