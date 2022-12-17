@@ -10,7 +10,7 @@ import Games from "./Games";
 const Home = () => {
     return ( 
         <div>
-            <Navbar/>
+            {/* <Navbar/> */}
             <Marqueee/>
             <HeroSection/>
             <Games/>

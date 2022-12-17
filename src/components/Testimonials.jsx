@@ -1,7 +1,6 @@
 import ArrowUpRight from "../assests/ArrowUpRight.svg";
 import { Link } from "react-router-dom";
 import avatar from "../assests/avatar.jpg";
-import Carousel from "nuka-carousel"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

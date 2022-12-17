@@ -13,7 +13,7 @@ const GameType = ({image , type}) => {
     )
 }
 
-const Game = ({}) => {
+const Game = ({amount , type}) => {
     return(
         <div className=" w-[32%]">
             <div className="flex flex-col">
@@ -21,8 +21,8 @@ const Game = ({}) => {
                 <span className="text-[.7rem] m-auto">01 : 15 : 04</span>
             </div>
             <div className="bg-[#C7DECC] rounded-xl py-3 text-[#28743A] text-center">
-                <p className="text-[.7rem]">RAPID GAMES</p>
-                <p className="text-[.7rem]"><span className="font-bold text-[1rem]">NGN20,000</span><br/> salary for 30 years </p>
+                <p className="text-[.7rem]">{type}</p>
+                <p className="text-[.7rem]"><span className="font-bold text-[1rem]">{amount}</span><br/> salary for 30 years </p>
                 <button className="bg-[#28743A] text-[#BBFF4B] rounded-xl text-[.7rem] p-1 px-3 m-2">Play Now</button>
             </div>
         </div>
@@ -34,9 +34,9 @@ const RapidGames = () => {
         <>
             <GameType image={lightning} type={"Play Rapid Games"}/>
             <div className="py-5 p-2 flex justify-between">
-                <Game/>
-                <Game/>
-                <Game/>
+                <Game amount={"NGN20,000"} type={"RAPID GAMES"}/>
+                <Game amount={"NGN50,000"} type={"RAPID GAMES"}/>
+                <Game amount={"NGN70,000"} type={"RAPID GAMES"}/>
             </div>
         </>
     )
@@ -47,9 +47,9 @@ const DailyGames = () => {
         <>
             <GameType image={daily} type={"Play Daily Games"}/>
             <div className="py-5 p-2 flex justify-between">
-                <Game/>
-                <Game/>
-                <Game/>
+                <Game amount={"NGN20,000"} type={"DAILY GAMES"}/>
+                <Game amount={"NGN50,000"} type={"DAILY GAMES"}/>
+                <Game amount={"NGN70,000"} type={"DAILY GAMES"}/>
             </div>
         </>
     )
@@ -60,9 +60,9 @@ const WeeklyGames = () => {
         <>
             <GameType image={weekly} type={"Play Weekly Games"}/>
             <div className="py-5 p-2 flex justify-between">
-                <Game/>
-                <Game/>
-                <Game/>
+                <Game amount={"NGN20,000"} type={"WEEKLY GAMES"}/>
+                <Game amount={"NGN50,000"} type={"WEEKLY GAMES"}/>
+                <Game amount={"NGN70,000"} type={"WEEKLY GAMES"}/>
             </div>
         </>
     )
