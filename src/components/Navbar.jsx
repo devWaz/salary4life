@@ -11,10 +11,10 @@ const Navbar = () => {
                     <p className="text-[#28743A]">Menu</p>
                     <img src={menuIcon} alt="Menu Icon" className="w-5"/>
                 </div>
-                <div className="flex items-center gap-1">
+                <Link to="/profile" className="flex items-center gap-1">
                     <p className="text-[#28743A]">My account</p>
                     <img src={userIcon} alt="User Icon" className="w-5"/>
-                </div>
+                </Link>
             </div>
 
             <header className="flex p-5 bg-[#28743A] justify-between">

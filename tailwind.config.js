@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'lemon': '#BBFF4B',
+        'gradient' : 'linear-gradient(152.87deg, #28743A 13.4%, #BBFF4B 146.73%)',
       },
     },
   },
