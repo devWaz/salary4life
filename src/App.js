@@ -3,6 +3,10 @@ import Login from "./components/Login";
 import Join from "./components/JoinNow";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile/ProfilePage";
+import Deposit from "./components/Deposit/Deposit";
+import Withdraw from "./components/Withdraw/Withdraw";
+import AirtimeDeposit from "./components/Deposit/AirtimeDeposit";
+import CardDeposit from "./components/Deposit/CardDeposit";
 import { BrowserRouter , Route , Routes } from "react-router-dom";
 
 function App() {
@@ -15,6 +19,10 @@ function App() {
         <Route  path="/login" element={<Login/>}/>
         <Route  path="/join" element={<Join/>}/>
         <Route  path="/profile" element={<Profile/>}/>
+        <Route  path="/deposit" element={<Deposit/>}/>
+        <Route  path="/withdraw" element={<Withdraw/>}/>
+        <Route  path="/airtime_deposit" element={<AirtimeDeposit/>}/>
+        <Route  path="/card_deposit" element={<CardDeposit/>}/>
       </Routes>
     </div>
     </BrowserRouter>

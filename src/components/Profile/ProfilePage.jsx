@@ -17,8 +17,8 @@ const Links = ({link , details}) => {
 
 const Profile = () => {
     return ( 
-        <div className="px-5 py-5">
-            <h1 className="text-[#28743A] text-[1.5rem]">My Account</h1>
+        <div className="p-5">
+            <h1 className="text-[#28743A] text-[1.5rem] font-medium">My Account</h1>
             <div className="">
                 <div className="mt-4 flex justify-between items-center">
                     <div className="flex gap-2 align-center justify-between items-center">
@@ -39,7 +39,7 @@ const Profile = () => {
                     </div>
                     <div className="mt-7 flex justify-between">
                         <Link to="/deposit"><button className="bg-lemon p-2 text-[.8rem] px-12 text-[#28743A] rounded-full">Deposit</button></Link>
-                        <Link><button className="p-2 text-[.8rem] px-12 rounded-full border">Withdraw</button></Link>
+                        <Link to="/withdraw"><button className="p-2 text-[.8rem] px-12 rounded-full border">Withdraw</button></Link>
                     </div>
                 </div>
 
