@@ -7,6 +7,7 @@ import Deposit from "./components/Deposit/Deposit";
 import Withdraw from "./components/Withdraw/Withdraw";
 import AirtimeDeposit from "./components/Deposit/AirtimeDeposit";
 import CardDeposit from "./components/Deposit/CardDeposit";
+import USSDdeposit from "./components/Deposit/USSDdeposit";
 import { BrowserRouter , Route , Routes } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route  path="/withdraw" element={<Withdraw/>}/>
         <Route  path="/airtime_deposit" element={<AirtimeDeposit/>}/>
         <Route  path="/card_deposit" element={<CardDeposit/>}/>
+        <Route  path="/ussd_deposit" element={<USSDdeposit/>}/>
       </Routes>
     </div>
     </BrowserRouter>
