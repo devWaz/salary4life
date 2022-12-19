@@ -13,7 +13,7 @@ const USSDdeposit = () => {
                     </div>
 
                     <button className="bg-[#BBFF4B] text-[#28743A] p-2 rounded-full">Top Up Now</button>
-                    <Link to="/deposit" className="text-center text-[#383535] text-[.8rem]">Try another payment method</Link>
+                    <Link to="/deposit" className="text-center text-[#797979] text-[.8rem]">Try another payment method</Link>
                 </form>
 
                 <div className="my-10 px-5">
