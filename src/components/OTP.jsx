@@ -1,14 +1,14 @@
 
 import Footer from "./Footer";
-import Loginform from "./Loginform";
+import OTPform from "./OTPform";
 
-const Login = () => {
+const OTP = () => {
     return ( 
         <div>
-            <Loginform/>
+            <OTPform/>
             <Footer/>
         </div>
      );
 }
  
-export default Login;
+export default OTP;
