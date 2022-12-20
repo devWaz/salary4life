@@ -6,7 +6,7 @@ const Login = () => {
     return ( 
         <div>
             <Loginform/>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
      );
 }

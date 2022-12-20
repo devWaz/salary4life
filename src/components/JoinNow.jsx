@@ -1,10 +1,13 @@
-import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Join = () => {
-    return ( 
-        <div>
-            {/* <Navbar/> */}
-        </div>
+    return (
+        <>
+            <div>
+
+            </div>
+            <Footer/>
+        </> 
      );
 }
  
