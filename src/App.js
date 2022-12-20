@@ -10,6 +10,7 @@ import Withdraw from "./components/Withdraw/Withdraw";
 import AirtimeDeposit from "./components/Deposit/AirtimeDeposit";
 import CardDeposit from "./components/Deposit/CardDeposit";
 import USSDdeposit from "./components/Deposit/USSDdeposit";
+import ChangePassword from "./components/Profile/ChangePassword";
 import { BrowserRouter , Route , Routes } from "react-router-dom";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route  path="/airtime_deposit" element={<AirtimeDeposit/>}/>
         <Route  path="/card_deposit" element={<CardDeposit/>}/>
         <Route  path="/ussd_deposit" element={<USSDdeposit/>}/>
+        <Route path="/ChangePassword" element={<ChangePassword/>}/>
       </Routes>
     </div>
     </BrowserRouter>

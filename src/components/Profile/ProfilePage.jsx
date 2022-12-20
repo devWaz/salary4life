@@ -47,7 +47,7 @@ const Profile = () => {
                     <Links link="" details="Gaming History"/>
                     <Links link="" details="My Account Info"/>
                     <Links link="" details="Transaction History"/>
-                    <Links link="" details="Reset Password"/>
+                    <Links link="../ChangePassword" details="Reset Password"/>
                 </div>
             </div>
         </div>
