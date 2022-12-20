@@ -3,29 +3,47 @@ import userIcon from "../assests/UserCircleGear.svg";
 import logo from "../assests/whiteLogo.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Fragment } from "react";
+import {
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
+  Button,
+} from "@material-tailwind/react";
 
 const Navbar = () => {
     const [menuState , setMenuState] = useState(false)
     return (
         <div className="sticky top-0 z-10">
+            <Fragment>
             <div className="flex items-center py-3 px-5 justify-between bg-[#FFFFFF]">
-                <div className="flex items-center gap-1" onClick={() => setMenuState(true)}>
-                    <p className="text-[#28743A]">Menu</p>
-                    <img src={menuIcon} alt="Menu Icon" className="w-5"/>
-                </div>
+                <Menu>
+                    <MenuHandler>
+                        <div className="flex items-center gap-1" onClick={() => setMenuState(true)}>
+                            <p className="text-[#28743A]">Menu</p>
+                            <img src={menuIcon} alt="Menu Icon" className="w-5"/>
+                        </div>
+                    </MenuHandler>
+
+                 <MenuList className="absolute z-10 p-5 rounded bg-white text-center flex flex-col gap-5">
+                    <Link to="/"><MenuItem className="p-2 px-10">Home</MenuItem></Link>
+                    <Link to="/deposit"><MenuItem className="p-2 px-10">Deposit</MenuItem></Link>
+                    <Link to="/history"><MenuItem className="p-2 px-10">Gaming History</MenuItem></Link>
+                    <Link to=""><MenuItem className="p-2 px-10">View Winning</MenuItem></Link>
+                    <Link to="/withdraw"><MenuItem className="p-2 px-10">Withdrawal</MenuItem></Link>
+                    <Link to=""><MenuItem className="p-2 px-10">Settings</MenuItem></Link>
+                </MenuList>
+                </Menu>
                 <Link to="/profile" className="flex items-center gap-1">
                     <p className="text-[#28743A]">My account</p>
                     <img src={userIcon} alt="User Icon" className="w-5"/>
                 </Link>
             </div>
-            {/* <ul className="absolute z-10 p-5 rounded bg-white text-center flex flex-col gap-5">
-                <Link><li className="p-2 px-10">Home</li></Link>
-                <Link><li className="p-2 px-10">Deposit</li></Link>
-                <Link><li className="p-2 px-10">Gaming History</li></Link>
-                <Link><li className="p-2 px-10">View Winning</li></Link>
-                <Link><li className="p-2 px-10">Withdrawal</li></Link>
-                <Link><li className="p-2 px-10">Settings</li></Link>
-            </ul> */}
+           
+            
+                
+            </Fragment>
 
             <header className="flex p-5 bg-[#28743A] justify-between">
                 <Link to="/">
