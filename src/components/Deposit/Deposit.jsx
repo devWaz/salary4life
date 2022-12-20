@@ -22,7 +22,7 @@ const Deposit = () => {
                 <div className="my-7">
                 <Links link="/airtime_deposit" details="Airtime Deposit"/>
                 <Links link="/card_deposit" details="Card"/>
-                <Links link="/" details="Bank Transfer"/>
+                <Links link="/bank_transfer" details="Bank Transfer"/>
                 <Links link="/ussd_deposit" details="USSD Payment"/>
                 </div>
 
