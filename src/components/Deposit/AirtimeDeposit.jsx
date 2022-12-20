@@ -9,7 +9,7 @@ const AirtimeDeposit = () => {
                 <form action="" className="py-7 flex flex-col gap-8">
                     <div className="flex flex-col gap-2">
                         <label htmlFor="" className="text-[#383535] text-[.8rem]">Your Mobile Number</label>
-                        <input type="text" className="rounded p-[.5rem] bg-[#EEEEEE] px-2"/>
+                        <input type="text" className="rounded p-[.5rem] bg-[#EEEEEE] px-2 border-none"/>
                     </div>
 
                     <div className="flex flex-col gap-2">

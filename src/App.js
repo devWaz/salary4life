@@ -10,8 +10,14 @@ import Withdraw from "./components/Withdraw/Withdraw";
 import AirtimeDeposit from "./components/Deposit/AirtimeDeposit";
 import CardDeposit from "./components/Deposit/CardDeposit";
 import USSDdeposit from "./components/Deposit/USSDdeposit";
+<<<<<<< HEAD
 import ChangePassword from "./components/Profile/ChangePassword";
+=======
+import BankTransfer from "./components/Deposit/BankTransfer";
+import TopUp from "./components/Deposit/TopUp";
+>>>>>>> 7cc6c6618993e864d20e1cdeb294bd44a53bd38e
 import { BrowserRouter , Route , Routes } from "react-router-dom";
+
 
 function App() {
   return (
@@ -22,15 +28,20 @@ function App() {
         <Route exact path="/" element={<Home/>}/>
         <Route  path="/login" element={<Login/>}/>
         <Route  path="/join" element={<Join/>}/>
-        <Route path="/ForgetPassword" element={<ForgetPasswordForm/>}/>
-        <Route path="/OTP" element={<OTPform/>}/>
+        <Route  path="/ForgetPassword" element={<ForgetPasswordForm/>}/>
+        <Route  path="/OTP" element={<OTPform/>}/>
         <Route  path="/profile" element={<Profile/>}/>
         <Route  path="/deposit" element={<Deposit/>}/>
         <Route  path="/withdraw" element={<Withdraw/>}/>
         <Route  path="/airtime_deposit" element={<AirtimeDeposit/>}/>
         <Route  path="/card_deposit" element={<CardDeposit/>}/>
         <Route  path="/ussd_deposit" element={<USSDdeposit/>}/>
+<<<<<<< HEAD
         <Route path="/ChangePassword" element={<ChangePassword/>}/>
+=======
+        <Route  path="/bank_transfer" element={<BankTransfer/>}/>
+        <Route  path="/top_up" element={<TopUp/>}/>
+>>>>>>> 7cc6c6618993e864d20e1cdeb294bd44a53bd38e
       </Routes>
     </div>
     </BrowserRouter>

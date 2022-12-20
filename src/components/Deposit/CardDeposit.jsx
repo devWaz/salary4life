@@ -13,12 +13,12 @@ const CardDeposit = () => {
             <form className="flex flex-col">
                 <div className="border p-2 rounded flex px-4 my-7 gap-3">
                     <img src={card} alt="" />
-                    <input type="text" className="w-[20rem]" placeholder="Card Number"/>
+                    <input type="text" className="w-[20rem] border-none p-0" placeholder="Card Number"/>
                 </div>
                 <div className="flex justify-between">
                     <div className="border p-2 rounded flex px-4 gap-3 w-[50%]">
                         <img src={expiry} alt="" />
-                        <input type="text" className="w-[100%]" placeholder="Expiry"/>
+                        <input type="text" className="w-[100%] " placeholder="Expiry"/>
                     </div> 
                     <div className="border p-2 rounded flex px-4 gap-3 w-[35%]">
                         <img src={cvv} alt="" />
@@ -30,9 +30,8 @@ const CardDeposit = () => {
                 <div className="my-7">
                     <p className="text-right my-2 text-[#797979] text-[.8rem]">Balance (NGN)<span>0.00</span></p>
                     <div className="border p-2 rounded flex px-4 gap-3 items-center">
-                    {/* <img src={card} alt="" /> */}
-                    <input type="text" className="w-[80%]" placeholder="Amount (NGN)"/>
-                    <p className="text-[.6rem] text-[#797979]">min N100</p>
+                        <input type="text" className="w-[80%] border-none p-0" placeholder="Amount (NGN)"/>
+                        <p className="text-[.6rem] text-[#797979]">min N100</p>
                     </div>
                 </div>
                 
