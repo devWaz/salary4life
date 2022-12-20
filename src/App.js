@@ -10,12 +10,9 @@ import Withdraw from "./components/Withdraw/Withdraw";
 import AirtimeDeposit from "./components/Deposit/AirtimeDeposit";
 import CardDeposit from "./components/Deposit/CardDeposit";
 import USSDdeposit from "./components/Deposit/USSDdeposit";
-<<<<<<< HEAD
 import ChangePassword from "./components/Profile/ChangePassword";
-=======
 import BankTransfer from "./components/Deposit/BankTransfer";
 import TopUp from "./components/Deposit/TopUp";
->>>>>>> 7cc6c6618993e864d20e1cdeb294bd44a53bd38e
 import { BrowserRouter , Route , Routes } from "react-router-dom";
 
 
@@ -36,12 +33,9 @@ function App() {
         <Route  path="/airtime_deposit" element={<AirtimeDeposit/>}/>
         <Route  path="/card_deposit" element={<CardDeposit/>}/>
         <Route  path="/ussd_deposit" element={<USSDdeposit/>}/>
-<<<<<<< HEAD
         <Route path="/ChangePassword" element={<ChangePassword/>}/>
-=======
         <Route  path="/bank_transfer" element={<BankTransfer/>}/>
         <Route  path="/top_up" element={<TopUp/>}/>
->>>>>>> 7cc6c6618993e864d20e1cdeb294bd44a53bd38e
       </Routes>
     </div>
     </BrowserRouter>
