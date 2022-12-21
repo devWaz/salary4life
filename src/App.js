@@ -14,6 +14,7 @@ import ChangePassword from "./components/Profile/ChangePassword";
 import BankTransfer from "./components/Deposit/BankTransfer";
 import TopUp from "./components/Deposit/TopUp";
 import History from "./components/Gaming/History";
+import GamesPages from "./components/Games/GamesPages";
 import { BrowserRouter , Route , Routes } from "react-router-dom";
 
 
@@ -38,6 +39,7 @@ function App() {
         <Route  path="/bank_transfer" element={<BankTransfer/>}/>
         <Route  path="/top_up" element={<TopUp/>}/>
         <Route  path="/history" element={<History/>}/>
+        <Route path="/GamesPages" element={<GamesPages/>}/>
       </Routes>
     </div>
     </BrowserRouter>
