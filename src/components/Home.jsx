@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import Footer from "./Footer";
 import FAQs from "./FAQs";

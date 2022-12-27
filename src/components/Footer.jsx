@@ -7,35 +7,35 @@ const Footer = () => {
     return ( 
         <footer className="p-5 bg-[#000000] flex flex-col justify-center pb-7">
             <div className="flex mt-5 gap-8 justify-center">
-                <a href="">
+                <a href="/">
                     <img src={instagram} alt="" />
                 </a>
-                <a href="">
+                <a href="/">
                     <img src={twitter} alt="" />
                 </a>
-                <a href="">
+                <a href="/">
                     <img src={facebook} alt="" />
                 </a>
             </div>
 
             <ul className="text-white my-10 px-7 flex flex-wrap gap-5 text-[.9rem] justify-center">
                 <li>
-                    <a href="">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="">About Us</a>
+                    <a href="/">About Us</a>
                 </li>
                 <li>
-                    <a href="">Contact Us</a>
+                    <a href="/">Contact Us</a>
                 </li>
                 <li>
-                    <a href="">Support</a>
+                    <a href="/">Support</a>
                 </li>
                 <li>
-                    <a href="">Rules</a>
+                    <a href="/">Rules</a>
                 </li>
                 <li>
-                    <a href="">Privacy Policy</a>
+                    <a href="/">Privacy Policy</a>
                 </li>
             </ul>
 

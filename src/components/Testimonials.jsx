@@ -1,5 +1,5 @@
 import ArrowUpRight from "../assests/ArrowUpRight.svg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import avatar from "../assests/avatar.jpg";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,7 +24,7 @@ const Testimonials = () => {
         <div className="p-2 m-4 bg-[#FAFAF4] py-10">
             <h3 className="text-[#28743A] text-[.8rem] font-light tracking-widest">CHANGING LIVES</h3>
             <p className="text-[#797979] text-[1.3rem] my-3">Salary for life games are touching lives and changing stories.</p>
-            <a href="" className="text-[#28743A] flex gap-1">View all Testimonials here
+            <a href="/" className="text-[#28743A] flex gap-1">View all Testimonials here
                 <img src={ArrowUpRight} alt="" />
             </a>
 

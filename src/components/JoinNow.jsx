@@ -30,7 +30,7 @@ const Join = () => {
                     </div>
                     <div className="flex gap-4 items-center">
                         <input type="checkbox" name="" id="" className="p-3 text-[#28743A] focus:border-green-500 focus:outline-none"/>
-                        <p className="text-[#797979] text-[.8rem]">By creating an account, you accept the <a href="" className="text-[#28743A] underline font-medium">Terms and Conditions</a></p>
+                        <p className="text-[#797979] text-[.8rem]">By creating an account, you accept the <a href="/" className="text-[#28743A] underline font-medium">Terms and Conditions</a></p>
                     </div>
                     
                     <button className="bg-[#BBFF4B] text-[#28743A] p-2 rounded-full">Join Now</button>
